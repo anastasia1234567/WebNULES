@@ -241,6 +241,10 @@ i.fa {
 
 /*Price*/
 
+.price {
+    background-color: #e7edf3;
+}
+
 .price__title {
     margin-top: 137px;
     color: #394b50;
@@ -253,17 +257,74 @@ i.fa {
 .price__wrap {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    align-items: center;
+    margin-top: 80px;
 }
 
 .price__block {
     padding: 57px 50px 48px 50px;
     border: 1px solid #ccd5df;
     background-color: #ffffff;
+    color: #818b95;
+    font-family: 'Lato';
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.price__block-title {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.price__cost {
+    color: #ffbb42;
+    font-family: 'Open Sans';
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.price__cost-dollar {
+    font-size: 25px;
+}
+
+.price__cost-descr {
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+}
+
+.price__descr {
+    border-top: inherit;
+    border-color: rgb(226, 233, 240);
+    margin-top: 30px;
+}
+
+.price__block:first-child {
+    margin-right: 125px;
+}
+
+.price__block:last-child {
+    margin-left: 125px;
 }
 
 .price__block:nth-child(2) {
     padding: 87px 50px 78px 50px;
+    position: absolute;
+    background-color: #709dca;
+    color: #fff;
+}
+
+.price__block:nth-child(2) .price__cost {
+    color: #fff;
+}
+
+.price__block:nth-child(2) .price__descr {
+    border-top: inherit;
+    border-top-color: rgb(112, 157, 202);
+}
+
+.price__block .btn-wrap {
+    margin-top: 35px;
 }
 
 /* Footter */
@@ -303,14 +364,24 @@ i.fa {
     display: flex;
     margin: auto;
     justify-content: space-between;
+    margin-bottom: 53px;
 }
 
 .icon {
-    /* fill: #709dca; */
     width: 17px;
     height: 18px;
 }
 
-.icon:hover {
-    fill: #ffbb42;
+.signature-wrap {
+    background-color: #709dca;
+    padding-top: 17px;
+    padding-bottom: 19px;
+}
+
+.signature {
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
 }
