@@ -60,14 +60,15 @@ html {
     background-color: #709dca;
 }
 
-.home__title {
+.title-wrap {
+    text-align: center;
+    color: #394b50;
+}
+
+.home .title-wrap {
     color: #ffffff;
     padding-top: 110px;
     padding-bottom: 35px;
-}
-
-.title-wrap {
-    text-align: center;
 }
 
 .title {
@@ -88,6 +89,9 @@ html {
 
 .home__form {
     padding-bottom: 350px;
+}
+
+.form {
     display: flex;
     justify-content: center;
 }
@@ -104,7 +108,7 @@ i.fa {
     color: #6e6e6e;
 }
 
-.home__fill {
+.fill {
     margin-right: 15px;
     padding: 10px 120px 10px 30px;
     color: #a9a9a9;
@@ -125,7 +129,19 @@ i.fa {
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
+    transition: margin-left 4s 1s;
+    cursor: pointer;
 }
+
+.btn:hover {
+    transform: scale(0.95, 0.95);
+    background-color: rgba(255, 162, 0, 1);
+}
+
+/* .home .btn:hover {
+    background-color: rgba(255, 187, 66, 0.9);
+    ;
+} */
 
 .home__slider-img {
     width: 647px;
@@ -189,8 +205,17 @@ i.fa {
     margin: 38px 50px 30px 50px;
 }
 
-.service__item-img-wrap {
+/* .service__item-img-wrap {
     margin-right: 38px;
+} */
+
+.service__item-img-wrap i.fa {
+    width: 58px;
+    height: 40px;
+    font-size: 45px;
+    color: #709dca;
+    text-align: left;
+    margin-right: 30px;
 }
 
 .service__item-title {
@@ -259,6 +284,7 @@ i.fa {
     justify-content: center;
     align-items: center;
     margin-top: 80px;
+    margin-bottom: 194px;
 }
 
 .price__block {
@@ -297,6 +323,7 @@ i.fa {
     border-top: inherit;
     border-color: rgb(226, 233, 240);
     margin-top: 30px;
+    border-top-color: #e2e9f0;
 }
 
 .price__block:first-child {
@@ -318,23 +345,249 @@ i.fa {
     color: #fff;
 }
 
-.price__block:nth-child(2) .price__descr {
-    border-top: inherit;
-    border-top-color: rgb(112, 157, 202);
-}
-
 .price__block .btn-wrap {
     margin-top: 35px;
 }
 
-/* Footter */
+/* HowItWork */
 
-.footer-wrap {
+.howItWork__title {
+    margin-top: 155px;
+}
+
+.howItWork__step-list-img, .howItWork__step-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.howItWork__step-list-img {
+    justify-content: space-around;
+    margin-bottom: 102px;
+    margin-top: 107px;
+}
+
+.step-item-img i.fa {
+    width: 67px;
+    height: 57px;
+    color: #709dca;
+    font-size: 72px;
+}
+
+i.fa:hover {
+    color: #ffbb42;
+}
+
+.step-item .item-title {
+    color: #394b50;
+    font-family: "Lato";
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+
+.step-item .item-subtitle {
+    color: #7b7b7b;
+    font-family: "Open Sans";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.howItWork .btn-wrap {
+    margin-top: 91px;
+    margin-bottom: 149px;
+}
+
+.howItWork__title .step-item {
+    margin: 0 30px;
+}
+
+.arrow-wrap {
+    position: absolute;
+}
+
+.arrow-invert {
+    top: 150px;
+    left: 100px;
+}
+
+.arrow {
+    top: 50px;
+    left: 140px;
+}
+
+.arrow:last-child {
+    left: 60px;
+}
+
+.arrow, .arrow-invert {
+    width: 125px;
+    height: 26px;
+    fill: #709dca;
+    position: relative;
+    margin: 0 100px;
+}
+
+/*  Clients section */
+
+.clients {
+    background-color: #ffc155;
+}
+
+.clients__title {
+    margin-top: 141px;
+    color: #fff;
+    font-style: 16px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.clients__review-wrap-first {
+    margin-top: 58px;
+}
+
+.clients__review-wrap-second {
+    margin-bottom: 160px;
+}
+
+.clients__review-wrap-first, .clients__review-wrap-second {
+    display: flex;
+}
+
+.clients__review {
+    padding: 51px 40px 51px 31px;
+    margin: 20px 30px;
+    display: flex;
+    width: 567px;
+    background-color: #fff;
+}
+
+.clients__review-img {
+    width: 121px;
+    height: 121px;
+}
+
+.clients__review-text-wrap {
+    display: flex;
+    flex-direction: column;
+    margin-left: 13px;
+}
+
+.clients__review-quote {
+    color: #7b7b7b;
+    font-family: "Open Sans";
+    font-size: 13px;
+    line-height: 22px;
+    text-align: left;
+}
+
+.clients__review-name {
+    color: #99a9ae;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.review-name-fullname {
+    color: #ffbb42;
+}
+
+.quote {
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 5px;
+    line-height: 22px;
+    text-align: left;
+}
+
+/* Contact */
+
+.contact__content-wrap {
+    background: url(/landing_var09/images/map.png) no-repeat;
+}
+
+.contact__figure {
+    margin-top: 40px;
+    width: 279px;
+    height: 292px;
+}
+
+.logo-img {
+    width: 50px;
+    height: 48px
+}
+
+.contact .logo-img {
+    margin-bottom: 80px;
+}
+
+.contact__title {
+    margin-top: 154px;
+    margin-bottom: 38px;
+}
+
+.contact__form {
+    margin-bottom: 53px;
+}
+
+.contact .fill {
+    border: 1px solid #cbcbcb;
+}
+
+.contact__border-line {
+    width: 1170px;
+    height: 1px;
+    background-color: #e3e7ec;
+}
+
+.contact__img-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact__contact-inf {
+    display: flex;
+    flex-direction: column;
+    color: #aeb7ba;
+    font-family: "Open Sans";
+    font-size: 13px;
+    text-align: center;
+    position: relative;
+    bottom: 350px;
+    line-height: 24px;
+}
+
+.contact__inf-title {
+    color: #ffffff;
+    font-family: 'Lato';
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contact__contact-link {
+    cursor: pointer;
+}
+
+.contact__contact-link:hover {
+    color: #ffbb42;
+}
+
+.contact__nav-wrap {
     display: flex;
     justify-content: center;
 }
 
-.footer .list__item-anchor {
+.contact .list__item-anchor {
     color: #394b50;
     font-weight: bold;
 }
@@ -370,15 +623,23 @@ i.fa {
 .icon {
     width: 17px;
     height: 18px;
+    fill: #709dca
 }
 
-.signature-wrap {
+.icon:hover {
+    fill: #ffbb42
+}
+
+/* 
+<--Footer--!> */
+
+.footer__signature-wrap {
     background-color: #709dca;
     padding-top: 17px;
     padding-bottom: 19px;
 }
 
-.signature {
+.footer__signature {
     color: #ffffff;
     font-family: "Open Sans";
     font-size: 13px;
