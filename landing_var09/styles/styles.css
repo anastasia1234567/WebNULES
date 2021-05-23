@@ -138,11 +138,6 @@ i.fa {
     background-color: rgba(255, 162, 0, 1);
 }
 
-/* .home .btn:hover {
-    background-color: rgba(255, 187, 66, 0.9);
-    ;
-} */
-
 .home__slider-img {
     width: 647px;
     height: 343px;
@@ -197,17 +192,12 @@ i.fa {
 .service__list {
     display: flex;
     flex-direction: column;
-    /* flex-wrap: wrap; */
 }
 
 .service__list-item {
     display: flex;
     margin: 38px 50px 30px 50px;
 }
-
-/* .service__item-img-wrap {
-    margin-right: 38px;
-} */
 
 .service__item-img-wrap i.fa {
     width: 58px;
